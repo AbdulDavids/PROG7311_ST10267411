@@ -1,0 +1,78 @@
+@model PROG7311_POE_ST10267411.ViewModels.ProductViewModel
+
+@{
+    ViewData["Title"] = "Add Product";
+}
+
+<div class="container">
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-action="My">My Products</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Add New Product</li>
+        </ol>
+    </nav>
+
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-header bg-success text-white">
+                    <h5 class="mb-0"><i class="fas fa-plus-circle me-2"></i>Add New Product</h5>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Create" method="post">
+                        <input type="hidden" asp-for="FarmerId" />
+                        <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+                        <div class="mb-3">
+                            <label asp-for="Name" class="form-label">Product Name</label>
+                            <input asp-for="Name" class="form-control" placeholder="Enter product name" />
+                            <span asp-validation-for="Name" class="text-danger"></span>
+                            <div class="form-text">
+                                Be specific with your product name so energy companies can understand what you're offering.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Category" class="form-label">Category</label>
+                            <input asp-for="Category" class="form-control" placeholder="Enter product category" list="categoryOptions" />
+                            <datalist id="categoryOptions">
+                                <option value="Grains"></option>
+                                <option value="Vegetables"></option>
+                                <option value="Fruits"></option>
+                                <option value="Sugar Crops"></option>
+                                <option value="Legumes"></option>
+                                <option value="Biomass"></option>
+                                <option value="Crop Residue"></option>
+                                <option value="Wood Products"></option>
+                            </datalist>
+                            <span asp-validation-for="Category" class="text-danger"></span>
+                            <div class="form-text">
+                                Choose or type a category that best describes your product. This helps with filtering.
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="ProductionDate" class="form-label">Production Date</label>
+                            <input asp-for="ProductionDate" type="date" class="form-control" />
+                            <span asp-validation-for="ProductionDate" class="text-danger"></span>
+                            <div class="form-text">
+                                The date when the product was harvested or will be available.
+                            </div>
+                        </div>
+
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                            <a asp-action="My" class="btn btn-outline-secondary me-md-2">Cancel</a>
+                            <button type="submit" class="btn btn-success">
+                                <i class="fas fa-save me-2"></i>Save Product
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+} 

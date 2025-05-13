@@ -1,0 +1,101 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center mb-4">
+    <h1 class="display-4">Welcome to Agri-Energy Connect</h1>
+    <p class="lead">Connecting farmers and energy companies for a sustainable future</p>
+</div>
+
+@if (User.IsInRole("Farmer"))
+{
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-header bg-success text-white">
+                    <h5 class="mb-0"><i class="fas fa-seedling me-2"></i>Farmer Dashboard</h5>
+                </div>
+                <div class="card-body">
+                    <p>Welcome to your farmer dashboard. Here you can manage your products and see what you've listed for energy companies to discover.</p>
+                    <div class="d-grid gap-2">
+                        <a asp-controller="Products" asp-action="My" class="btn btn-outline-success">
+                            <i class="fas fa-list me-2"></i>View My Products
+                        </a>
+                        <a asp-controller="Products" asp-action="Create" class="btn btn-success">
+                            <i class="fas fa-plus me-2"></i>Add New Product
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-header bg-info text-white">
+                    <h5 class="mb-0"><i class="fas fa-info-circle me-2"></i>How It Works</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <h6><i class="fas fa-plus-circle me-2 text-success"></i>Add Your Products</h6>
+                        <p>List your farm products with details like category and production date.</p>
+                    </div>
+                    <div class="mb-3">
+                        <h6><i class="fas fa-search me-2 text-primary"></i>Get Discovered</h6>
+                        <p>Energy companies browse the platform looking for biomass inputs.</p>
+                    </div>
+                    <div>
+                        <h6><i class="fas fa-handshake me-2 text-warning"></i>Make Connections</h6>
+                        <p>Connect with energy companies interested in your produce.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else if (User.IsInRole("Employee"))
+{
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-header bg-primary text-white">
+                    <h5 class="mb-0"><i class="fas fa-industry me-2"></i>Employee Dashboard</h5>
+                </div>
+                <div class="card-body">
+                    <p>Welcome to your energy company dashboard. Here you can browse farmers and their products to find sustainable biomass inputs.</p>
+                    <div class="d-grid gap-2">
+                        <a asp-controller="Farmers" asp-action="Index" class="btn btn-outline-primary">
+                            <i class="fas fa-users me-2"></i>View All Farmers
+                        </a>
+                        <a asp-controller="Products" asp-action="Index" class="btn btn-primary">
+                            <i class="fas fa-leaf me-2"></i>Browse All Products
+                        </a>
+                        <a asp-controller="Farmers" asp-action="Create" class="btn btn-success">
+                            <i class="fas fa-user-plus me-2"></i>Add New Farmer
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-header bg-info text-white">
+                    <h5 class="mb-0"><i class="fas fa-filter me-2"></i>Filtering Options</h5>
+                </div>
+                <div class="card-body">
+                    <p>Our platform allows you to find exactly what you need:</p>
+                    <div class="mb-3">
+                        <h6><i class="fas fa-calendar-alt me-2 text-warning"></i>Filter by Date</h6>
+                        <p>Find the freshest products or plan ahead with our date range filtering.</p>
+                    </div>
+                    <div class="mb-3">
+                        <h6><i class="fas fa-tags me-2 text-danger"></i>Filter by Category</h6>
+                        <p>Narrow down to specific biomass types like grains, vegetables, or dedicated energy crops.</p>
+                    </div>
+                    <div>
+                        <h6><i class="fas fa-user-check me-2 text-success"></i>Filter by Farmer</h6>
+                        <p>Browse products from specific farmers you trust or want to work with.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

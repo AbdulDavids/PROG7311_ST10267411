@@ -1,0 +1,68 @@
+@model PROG7311_POE_ST10267411.ViewModels.ProductFilterViewModel
+
+@{
+    ViewData["Title"] = $"{ViewData["FarmerName"]}'s Products";
+    var farmerName = ViewData["FarmerName"] as string;
+}
+
+<div class="container">
+    <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-controller="Farmers" asp-action="Index">Farmers</a></li>
+            <li class="breadcrumb-item"><a asp-controller="Farmers" asp-action="Details" asp-route-id="@Model.FarmerId">@farmerName</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Products</li>
+        </ol>
+    </nav>
+
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1>@farmerName's Products</h1>
+        <a asp-controller="Farmers" asp-action="Details" asp-route-id="@Model.FarmerId" class="btn btn-outline-primary">
+            <i class="fas fa-arrow-left me-2"></i>Back to Farmer
+        </a>
+    </div>
+
+    <div class="card shadow-sm">
+        <div class="card-header bg-white">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h5 class="mb-0">Product List</h5>
+                </div>
+                <div class="col-auto">
+                    <span class="badge bg-primary">@Model.Products.Count product@(Model.Products.Count != 1 ? "s" : "")</span>
+                </div>
+            </div>
+        </div>
+        <div class="card-body p-0">
+            <div class="table-responsive">
+                <table class="table table-hover table-striped mb-0">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Category</th>
+                            <th>Production Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var product in Model.Products)
+                        {
+                            <tr>
+                                <td>@product.Name</td>
+                                <td>
+                                    <span class="badge bg-info">@product.Category</span>
+                                </td>
+                                <td>@product.ProductionDate.ToString("yyyy-MM-dd")</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    @if (!Model.Products.Any())
+    {
+        <div class="alert alert-info mt-3">
+            <i class="fas fa-info-circle me-2"></i>This farmer doesn't have any products yet.
+        </div>
+    }
+</div> 
