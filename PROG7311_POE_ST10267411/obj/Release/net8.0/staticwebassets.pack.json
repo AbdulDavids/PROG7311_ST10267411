@@ -9,8 +9,16 @@
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
+      "Id": "/Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411/wwwroot/css/theme.css",
+      "PackagePath": "staticwebassets/css/theme.css"
+    },
+    {
       "Id": "/Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411/wwwroot/img/forest.jpg",
+      "PackagePath": "staticwebassets/img/forest.jpg"
     },
     {
       "Id": "/Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411/wwwroot/js/site.js",

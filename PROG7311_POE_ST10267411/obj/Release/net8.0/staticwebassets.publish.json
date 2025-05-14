@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "w5p4jN9OY8XxcNV0z4y4YH2IWy2fLLM2uaEfsacErQg=",
+  "Hash": "NZEmOmgPJfMrEdgUFbXBmZixeyrbqRgXzaBi061Z9SY=",
   "Source": "PROG7311_POE_ST10267411",
   "BasePath": "_content/PROG7311_POE_ST10267411",
   "Mode": "Default",
@@ -1340,6 +1340,27 @@
       "OriginalItemSpec": "wwwroot/css/site.css"
     },
     {
+      "Identity": "/Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411/wwwroot/css/theme.css",
+      "SourceId": "PROG7311_POE_ST10267411",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411/wwwroot/",
+      "BasePath": "_content/PROG7311_POE_ST10267411",
+      "RelativePath": "css/theme#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uxcz05j896",
+      "Integrity": "vm/wBf3WwdPG2M3enHzpJzAgpuHoU27ZwYMc/33Z8P0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/theme.css"
+    },
+    {
       "Identity": "/Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411/wwwroot/favicon.ico",
       "SourceId": "PROG7311_POE_ST10267411",
       "SourceType": "Discovered",
@@ -1361,6 +1382,27 @@
       "OriginalItemSpec": "wwwroot/favicon.ico"
     },
     {
+      "Identity": "/Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411/wwwroot/img/forest.jpg",
+      "SourceId": "PROG7311_POE_ST10267411",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411/wwwroot/",
+      "BasePath": "_content/PROG7311_POE_ST10267411",
+      "RelativePath": "img/forest#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "n2zkm9cqhg",
+      "Integrity": "j8iKRxuIuB8Ly6GvLcYyBMzJLHC21ZK20jdU99xCQdo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/img/forest.jpg"
+    },
+    {
       "Identity": "/Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411/wwwroot/js/site.js",
       "SourceId": "PROG7311_POE_ST10267411",
       "SourceType": "Discovered",
@@ -1375,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "fr7q2aak1r",
-      "Integrity": "y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM=",
+      "Fingerprint": "6vfkh8ukss",
+      "Integrity": "Uj6UVywV2Ql9BkUkzeoJkLl3BuvLfAAymzzykAV46d4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/site.js"
@@ -2603,7 +2645,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 19:24:00 GMT"
+          "Value": "Wed, 14 May 2025 17:02:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2640,7 +2682,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 13 May 2025 19:24:00 GMT"
+          "Value": "Wed, 14 May 2025 17:02:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2659,6 +2701,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-naE4mZ/egqNP4SFcwc3Cb4v+npVgYFQ1eP90YH738FM="
+        }
+      ]
+    },
+    {
+      "Route": "css/theme.css",
+      "AssetFile": "/Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411/wwwroot/css/theme.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5446"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vm/wBf3WwdPG2M3enHzpJzAgpuHoU27ZwYMc/33Z8P0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 18:32:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vm/wBf3WwdPG2M3enHzpJzAgpuHoU27ZwYMc/33Z8P0="
+        }
+      ]
+    },
+    {
+      "Route": "css/theme.uxcz05j896.css",
+      "AssetFile": "/Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411/wwwroot/css/theme.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5446"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vm/wBf3WwdPG2M3enHzpJzAgpuHoU27ZwYMc/33Z8P0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 18:32:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uxcz05j896"
+        },
+        {
+          "Name": "label",
+          "Value": "css/theme.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vm/wBf3WwdPG2M3enHzpJzAgpuHoU27ZwYMc/33Z8P0="
         }
       ]
     },
@@ -4965,8 +5089,8 @@
       ]
     },
     {
-      "Route": "js/site.fr7q2aak1r.js",
-      "AssetFile": "/Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411/wwwroot/js/site.js",
+      "Route": "img/forest.jpg",
+      "AssetFile": "/Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411/wwwroot/img/forest.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4975,19 +5099,56 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "227"
+          "Value": "483997"
         },
         {
           "Name": "Content-Type",
-          "Value": "text/javascript"
+          "Value": "image/jpeg"
         },
         {
           "Name": "ETag",
-          "Value": "\"y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM=\""
+          "Value": "\"j8iKRxuIuB8Ly6GvLcYyBMzJLHC21ZK20jdU99xCQdo=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 09:05:48 GMT"
+          "Value": "Wed, 14 May 2025 18:29:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-j8iKRxuIuB8Ly6GvLcYyBMzJLHC21ZK20jdU99xCQdo="
+        }
+      ]
+    },
+    {
+      "Route": "img/forest.n2zkm9cqhg.jpg",
+      "AssetFile": "/Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411/wwwroot/img/forest.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "483997"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"j8iKRxuIuB8Ly6GvLcYyBMzJLHC21ZK20jdU99xCQdo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 18:29:09 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4997,7 +5158,52 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fr7q2aak1r"
+          "Value": "n2zkm9cqhg"
+        },
+        {
+          "Name": "label",
+          "Value": "img/forest.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-j8iKRxuIuB8Ly6GvLcYyBMzJLHC21ZK20jdU99xCQdo="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.6vfkh8ukss.js",
+      "AssetFile": "/Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411/wwwroot/js/site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "613"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Uj6UVywV2Ql9BkUkzeoJkLl3BuvLfAAymzzykAV46d4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 18:27:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6vfkh8ukss"
         },
         {
           "Name": "label",
@@ -5005,7 +5211,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM="
+          "Value": "sha256-Uj6UVywV2Ql9BkUkzeoJkLl3BuvLfAAymzzykAV46d4="
         }
       ]
     },
@@ -5020,7 +5226,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "227"
+          "Value": "613"
         },
         {
           "Name": "Content-Type",
@@ -5028,11 +5234,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM=\""
+          "Value": "\"Uj6UVywV2Ql9BkUkzeoJkLl3BuvLfAAymzzykAV46d4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 09:05:48 GMT"
+          "Value": "Wed, 14 May 2025 18:27:17 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5042,7 +5248,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM="
+          "Value": "sha256-Uj6UVywV2Ql9BkUkzeoJkLl3BuvLfAAymzzykAV46d4="
         }
       ]
     },
