@@ -163,6 +163,3 @@ C:/Users/Humera Mathia/source/repos/PROG7311_POE_ST10267411/PROG7311_POE_ST10267
 /Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411/bin/Debug/net8.0/runtimes/win-x64/native/e_sqlite3.dll
 /Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411/bin/Debug/net8.0/runtimes/win-x86/native/e_sqlite3.dll
 /Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411/obj/Debug/net8.0/PROG7311.B3EC3973.Up2Date
-/Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411/bin/Debug/net8.0/PROG7311_POE_ST10267411.staticwebassets.endpoints.json
-/Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411/obj/Debug/net8.0/staticwebassets.build.endpoints.json
-/Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411/obj/Debug/net8.0/staticwebassets/msbuild.PROG7311_POE_ST10267411.Microsoft.AspNetCore.StaticWebAssetEndpoints.props

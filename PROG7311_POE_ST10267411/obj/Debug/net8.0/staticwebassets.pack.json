@@ -2,15 +2,23 @@
   "Files": [
     {
       "Id": "/Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411/obj/Debug/net8.0/scopedcss/projectbundle/PROG7311_POE_ST10267411.bundle.scp.css",
-      "PackagePath": "staticwebassets/PROG7311_POE_ST10267411.890aqoifcx.bundle.scp.css"
+      "PackagePath": "staticwebassets/PROG7311_POE_ST10267411.bundle.scp.css"
     },
     {
       "Id": "/Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
+      "Id": "/Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411/wwwroot/css/theme.css",
+      "PackagePath": "staticwebassets/css/theme.css"
+    },
+    {
       "Id": "/Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411/wwwroot/img/forest.jpg",
+      "PackagePath": "staticwebassets/img/forest.jpg"
     },
     {
       "Id": "/Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411/wwwroot/js/site.js",
@@ -243,10 +251,6 @@
     {
       "Id": "/Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411/wwwroot/lib/jquery/dist/jquery.min.map",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
-    },
-    {
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.PROG7311_POE_ST10267411.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
-      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.PROG7311_POE_ST10267411.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -4,7 +4,6 @@
 /Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411.Tests/bin/Debug/net8.0/appsettings.Development.json
 /Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411.Tests/bin/Debug/net8.0/appsettings.json
 /Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411.Tests/bin/Debug/net8.0/PROG7311_POE_ST10267411.staticwebassets.runtime.json
-/Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411.Tests/bin/Debug/net8.0/PROG7311_POE_ST10267411.staticwebassets.endpoints.json
 /Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411.Tests/bin/Debug/net8.0/PROG7311_POE_ST10267411
 /Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411.Tests/bin/Debug/net8.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll
 /Users/abdul/RiderProjects/PROG7311_POE_ST10267411/PROG7311_POE_ST10267411.Tests/bin/Debug/net8.0/xunit.runner.reporters.netcoreapp10.dll
