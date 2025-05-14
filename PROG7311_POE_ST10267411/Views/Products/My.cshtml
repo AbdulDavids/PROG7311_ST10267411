@@ -5,27 +5,27 @@
 }
 
 <div class="container">
-    <div class="d-flex justify-content-between align-items-center mb-4">
-        <h1>My Products</h1>
+    <div class="d-flex justify-content-between align-items-center mb-4" style="--animation-order: 0;">
+        <h1 class="fw-bold">My Products</h1>
         <a asp-action="Create" class="btn btn-success">
             <i class="fas fa-plus me-2"></i>Add New Product
         </a>
     </div>
 
-    <div class="card shadow-sm">
+    <div class="card" style="--animation-order: 1;">
         <div class="card-header bg-white">
             <div class="row align-items-center">
                 <div class="col">
-                    <h5 class="mb-0">My Product List</h5>
+                    <h5 class="mb-0 fw-bold">My Product List</h5>
                 </div>
                 <div class="col-auto">
-                    <span class="badge bg-primary">@Model.Count product@(Model.Count != 1 ? "s" : "")</span>
+                    <span class="badge bg-success rounded-pill">@Model.Count product@(Model.Count != 1 ? "s" : "")</span>
                 </div>
             </div>
         </div>
         <div class="card-body p-0">
             <div class="table-responsive">
-                <table class="table table-hover table-striped mb-0">
+                <table class="table table-hover align-middle mb-0">
                     <thead>
                         <tr>
                             <th>Name</th>
@@ -38,17 +38,17 @@
                         @foreach (var product in Model)
                         {
                             <tr>
-                                <td>@product.Name</td>
+                                <td class="fw-medium">@product.Name</td>
                                 <td>
-                                    <span class="badge bg-info">@product.Category</span>
+                                    <span class="badge bg-success rounded-pill">@product.Category</span>
                                 </td>
                                 <td>@product.ProductionDate.ToString("yyyy-MM-dd")</td>
                                 <td class="text-end">
                                     <div class="btn-group">
-                                        <a asp-action="Edit" asp-route-id="@product.Id" class="btn btn-sm btn-outline-primary">
+                                        <a asp-action="Edit" asp-route-id="@product.Id" class="btn btn-sm btn-outline-success rounded-pill me-1">
                                             <i class="fas fa-edit"></i>
                                         </a>
-                                        <a asp-action="Delete" asp-route-id="@product.Id" class="btn btn-sm btn-outline-danger">
+                                        <a asp-action="Delete" asp-route-id="@product.Id" class="btn btn-sm btn-outline-danger rounded-pill">
                                             <i class="fas fa-trash-alt"></i>
                                         </a>
                                     </div>
@@ -63,14 +63,19 @@
 
     @if (!Model.Any())
     {
-        <div class="alert alert-info mt-3">
-            <i class="fas fa-info-circle me-2"></i>You haven't added any products yet. Click the "Add New Product" button to get started.
+        <div class="card mt-3" style="--animation-order: 2;">
+            <div class="card-body">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-info-circle me-3 text-success" style="font-size: 24px;"></i>
+                    <p class="mb-0">You haven't added any products yet. Click the "Add New Product" button to get started.</p>
+                </div>
+            </div>
         </div>
     }
 
     <div class="mt-4">
-        <div class="card shadow-sm">
-            <div class="card-header bg-success text-white">
+        <div class="card" style="--animation-order: 3;">
+            <div class="card-header bg-success text-white" style="border-radius: 14px 14px 0 0;">
                 <h5 class="mb-0"><i class="fas fa-lightbulb me-2"></i>Tip: What Makes a Good Product Listing?</h5>
             </div>
             <div class="card-body">
