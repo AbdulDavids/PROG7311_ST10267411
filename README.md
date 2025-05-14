@@ -138,9 +138,9 @@ Or open the solution in Visual Studio and run the tests from there.
 - **Frontend**: Bootstrap 5, HTML5, CSS3, JavaScript
 - **Validation**: Data Annotations and server-side validation
 - **Testing**: xUnit for controller unit tests
+- **Github Actions**: Because its cool!
 
 ## License
 
 This project is created for educational purposes as part of the PROG7311 module.
 
-*This project was developed by ST10267411.* 
