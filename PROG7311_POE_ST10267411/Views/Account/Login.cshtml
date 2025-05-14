@@ -7,7 +7,7 @@
 <div class="row justify-content-center">
     <div class="col-md-6">
         <div class="card mb-4" style="--animation-order: 0;">
-            <div class="card-header bg-success text-white" style="border-radius: 14px 14px 0 0; padding: 1.5rem;">
+            <div class="card-header bg-white text-black" style="border-bottom: 1px solid rgba(0,0,0,.1); border-radius: 14px 14px 0 0; padding: 1.5rem;">
                 <h2 class="text-center mb-0 fw-bold">@ViewData["Title"]</h2>
             </div>
             <div class="card-body p-4">
@@ -32,7 +32,7 @@
                     </div>
                     
                     <div class="d-grid gap-2">
-                        <button type="submit" class="btn btn-primary btn-lg">Log in</button>
+                        <button type="submit" class="btn btn-success btn-lg">Log in</button>
                     </div>
                 </form>
             </div>
@@ -42,15 +42,16 @@
                 </p>
             </div>
         </div>
-        <div class="card" style="--animation-order: 1;">
-            <div class="text-center">
-                <p class="text-muted small mb-0">
-                    <strong>Demo accounts:</strong><br>
-                    Employee: employee@demo.local<br>
-                    Farmer: farmer1@demo.local<br>
-                    Password: Password123!
-                </p>
-            </div>
+        <div class="alert alert-light text-center" style="--animation-order: 1; border-radius: 14px;">
+            <p class="mb-0 small">
+                <i class="fas fa-info-circle text-success me-1"></i> <strong>Farmer Demo account:</strong> sundar@gmail.com / Password123!
+
+                <br>
+
+                <i class="fas fa-info-circle text-success me-1"></i> <strong>Company Demo account:</strong> elon@gmail.com / Password123!
+
+
+            </p>
         </div>
     </div>
 </div>
