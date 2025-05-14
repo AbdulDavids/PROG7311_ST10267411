@@ -6,13 +6,13 @@
 
 <div class="row justify-content-center">
     <div class="col-md-6">
-        <div class="card shadow-sm">
-            <div class="card-header bg-primary text-white">
-                <h2 class="text-center mb-0">@ViewData["Title"]</h2>
+        <div class="card mb-4" style="--animation-order: 0;">
+            <div class="card-header bg-success text-white" style="border-radius: 14px 14px 0 0; padding: 1.5rem;">
+                <h2 class="text-center mb-0 fw-bold">@ViewData["Title"]</h2>
             </div>
             <div class="card-body p-4">
                 <form asp-controller="Account" asp-action="Login" asp-route-returnurl="@ViewData["ReturnUrl"]" method="post" class="needs-validation" novalidate>
-                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger" style="border-radius: 10px;"></div>
                     
                     <div class="form-floating mb-3">
                         <input asp-for="Email" class="form-control" autocomplete="username" aria-required="true" />
@@ -36,19 +36,21 @@
                     </div>
                 </form>
             </div>
-            <div class="card-footer text-center">
+            <div class="card-footer text-center" style="border-radius: 0 0 14px 14px; background-color: transparent;">
                 <p class="mb-0">
-                    New to Agri-Energy Connect? <a asp-action="Register" asp-route-returnurl="@ViewData["ReturnUrl"]">Register</a>
+                    New to Agri-Energy Connect? <a asp-action="Register" asp-route-returnurl="@ViewData["ReturnUrl"]" class="text-success fw-bold">Register</a>
                 </p>
             </div>
         </div>
-        <div class="text-center mt-3">
-            <p class="text-muted small">
-                <strong>Demo accounts:</strong><br>
-                Employee: employee@demo.local<br>
-                Farmer: farmer1@demo.local<br>
-                Password: Password123!
-            </p>
+        <div class="card" style="--animation-order: 1;">
+            <div class="text-center">
+                <p class="text-muted small mb-0">
+                    <strong>Demo accounts:</strong><br>
+                    Employee: employee@demo.local<br>
+                    Farmer: farmer1@demo.local<br>
+                    Password: Password123!
+                </p>
+            </div>
         </div>
     </div>
 </div>

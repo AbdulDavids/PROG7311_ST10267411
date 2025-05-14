@@ -5,27 +5,27 @@
 }
 
 <div class="container">
-    <div class="d-flex justify-content-between align-items-center mb-4">
-        <h1>Farmers</h1>
+    <div class="d-flex justify-content-between align-items-center mb-4" style="--animation-order: 0;">
+        <h1 class="fw-bold">Farmers</h1>
         <a asp-action="Create" class="btn btn-success">
             <i class="fas fa-plus me-2"></i>Add New Farmer
         </a>
     </div>
 
-    <div class="card shadow-sm">
+    <div class="card" style="--animation-order: 1;">
         <div class="card-header bg-white">
             <div class="row align-items-center">
                 <div class="col">
-                    <h5 class="mb-0">All Farmers</h5>
+                    <h5 class="mb-0 fw-bold">All Farmers</h5>
                 </div>
                 <div class="col-auto">
-                    <span class="badge bg-primary">@Model.Count farmers</span>
+                    <span class="badge bg-success rounded-pill">@Model.Count farmers</span>
                 </div>
             </div>
         </div>
         <div class="card-body p-0">
             <div class="table-responsive">
-                <table class="table table-hover table-striped mb-0">
+                <table class="table table-hover align-middle mb-0">
                     <thead>
                         <tr>
                             <th>Name</th>
@@ -39,20 +39,27 @@
                         @foreach (var farmer in Model)
                         {
                             <tr>
-                                <td>@farmer.Name</td>
-                                <td><a href="mailto:@farmer.Email">@farmer.Email</a></td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <div class="rounded-circle bg-success text-white d-flex align-items-center justify-content-center me-2" style="width: 36px; height: 36px; font-size: 14px;">
+                                            @(farmer.Name.Substring(0, 1).ToUpper())
+                                        </div>
+                                        <span>@farmer.Name</span>
+                                    </div>
+                                </td>
+                                <td><a href="mailto:@farmer.Email" class="text-success">@farmer.Email</a></td>
                                 <td>@farmer.Phone</td>
                                 <td>
-                                    <a asp-controller="Products" asp-action="FarmerProducts" asp-route-id="@farmer.Id" class="badge bg-success text-decoration-none">
+                                    <a asp-controller="Products" asp-action="FarmerProducts" asp-route-id="@farmer.Id" class="badge bg-success text-decoration-none rounded-pill">
                                         @farmer.ProductCount product@(farmer.ProductCount != 1 ? "s" : "")
                                     </a>
                                 </td>
                                 <td class="text-end">
                                     <div class="btn-group">
-                                        <a asp-action="Details" asp-route-id="@farmer.Id" class="btn btn-sm btn-outline-secondary">
+                                        <a asp-action="Details" asp-route-id="@farmer.Id" class="btn btn-sm btn-outline-success rounded-pill me-1">
                                             <i class="fas fa-eye"></i>
                                         </a>
-                                        <a asp-action="Edit" asp-route-id="@farmer.Id" class="btn btn-sm btn-outline-primary">
+                                        <a asp-action="Edit" asp-route-id="@farmer.Id" class="btn btn-sm btn-outline-success rounded-pill">
                                             <i class="fas fa-edit"></i>
                                         </a>
                                     </div>
@@ -67,8 +74,13 @@
 
     @if (!Model.Any())
     {
-        <div class="alert alert-info mt-3">
-            <i class="fas fa-info-circle me-2"></i>No farmers found. Click the "Add New Farmer" button to create one.
+        <div class="card mt-3" style="--animation-order: 2;">
+            <div class="card-body">
+                <div class="d-flex align-items-center">
+                    <i class="fas fa-info-circle me-3 text-success" style="font-size: 24px;"></i>
+                    <p class="mb-0">No farmers found. Click the "Add New Farmer" button to create one.</p>
+                </div>
+            </div>
         </div>
     }
 </div> 
