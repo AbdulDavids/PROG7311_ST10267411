@@ -6,10 +6,15 @@
 > NOTE: You can try out the Published application here:
 >
  https://st10267411.azurewebsites.net/
+ 
 
 ## Agri-Energy Connect Platform
 
 A platform that connects small-scale farmers with energy companies looking for sustainable biomass. The platform provides a streamlined way for farmers to showcase their agricultural products and for energy sector employees to find them.
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/d91e8b06-da8f-4454-9ab2-5899e070d1c4" width="700" />
+</p>
 
 ## Project Background
 
